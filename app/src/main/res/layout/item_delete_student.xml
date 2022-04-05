@@ -1,0 +1,53 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.cardview.widget.CardView xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    app:cardCornerRadius="8dp"
+    app:cardBackgroundColor="@color/white"
+    app:cardElevation="3dp"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+<androidx.constraintlayout.widget.ConstraintLayout
+    android:layout_width="match_parent"
+    android:padding="10dp"
+    android:layout_height="match_parent">
+
+    <TextView
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintRight_toRightOf="parent"
+        app:layout_constraintLeft_toLeftOf="parent"
+        android:id="@+id/item_delete_student_text"
+        android:text="Ushbu o`quvchini o`chirmoqchimisiz?"
+        android:textSize="19sp"
+        android:padding="10dp"
+        android:textColor="@color/blur"
+        android:gravity="center_horizontal"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"/>
+    <TextView
+        android:text="Yo`q"
+        android:textSize="19sp"
+        app:layout_constraintRight_toLeftOf="@id/item_delete_student_yes"
+        app:layout_constraintTop_toBottomOf="@id/item_delete_student_text"
+        android:id="@+id/item_delete_student_no"
+        android:layout_width="wrap_content"
+        android:textColor="@color/blur"
+        android:paddingRight="70dp"
+        android:paddingTop="20dp"
+        android:paddingBottom="20dp"
+        android:layout_height="wrap_content"/>
+    <TextView
+        android:text="Xa"
+        app:layout_constraintRight_toRightOf="@id/item_delete_student_text"
+        app:layout_constraintTop_toBottomOf="@id/item_delete_student_text"
+        android:id="@+id/item_delete_student_yes"
+        android:layout_width="wrap_content"
+        android:textSize="19sp"
+        android:paddingTop="20dp"
+        android:textColor="@color/yellow"
+        android:paddingBottom="20dp"
+        android:layout_height="wrap_content"/>
+
+
+</androidx.constraintlayout.widget.ConstraintLayout>
+
+</androidx.cardview.widget.CardView>

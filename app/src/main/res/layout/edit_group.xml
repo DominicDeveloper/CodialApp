@@ -1,0 +1,93 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:padding="20dp"
+    android:layout_height="wrap_content">
+        <EditText
+            android:layout_marginTop="10dp"
+            android:id="@+id/item_group_name"
+            android:layout_width="match_parent"
+            android:hint="Guruh nomi"
+            android:textColorHint="#474646"
+            app:layout_constraintRight_toRightOf="parent"
+            app:layout_constraintLeft_toLeftOf="parent"
+            app:layout_constraintTop_toTopOf="parent"
+            android:padding="15dp"
+            android:background="@color/lightblack"
+            android:layout_height="wrap_content"/>
+        <com.google.android.material.textfield.TextInputLayout
+            android:layout_marginTop="10dp"
+            android:id="@+id/ly_1"
+            android:background="@color/lightblack"
+            app:layout_constraintRight_toRightOf="parent"
+            app:layout_constraintLeft_toLeftOf="parent"
+            app:layout_constraintTop_toBottomOf="@id/item_group_name"
+            style="@style/Widget.MaterialComponents.TextInputLayout.OutlinedBox.ExposedDropdownMenu"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+            <AutoCompleteTextView
+                android:id="@+id/item_group_nentor"
+                android:layout_width="match_parent"
+                android:hint="Mentorni tanglang"
+                android:inputType="none"
+                android:layout_height="match_parent"/>
+
+        </com.google.android.material.textfield.TextInputLayout>
+
+
+        <com.google.android.material.textfield.TextInputLayout
+            android:layout_marginTop="10dp"
+            android:background="@color/lightblack"
+            style="@style/Widget.MaterialComponents.TextInputLayout.OutlinedBox.ExposedDropdownMenu"
+            app:layout_constraintTop_toBottomOf="@id/ly_1"
+            android:id="@+id/ly_2"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+            <AutoCompleteTextView
+                android:inputType="none"
+                android:hint="Vaqti"
+                android:id="@+id/item_group_time"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"/>
+
+        </com.google.android.material.textfield.TextInputLayout>
+
+
+            <TextView
+                app:layout_constraintTop_toBottomOf="@id/ly_2"
+                app:layout_constraintRight_toRightOf="@id/ly_2"
+                android:id="@+id/item_group_add"
+                android:text="O`zgartirish"
+                android:textStyle="bold"
+                android:textColor="@color/yellow"
+                android:textSize="14sp"
+                android:paddingRight="20dp"
+                android:paddingLeft="20dp"
+                android:paddingTop="10dp"
+                android:layout_marginTop="15dp"
+                android:paddingBottom="15dp"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"/>
+    <TextView
+        app:layout_constraintTop_toBottomOf="@id/ly_2"
+        app:layout_constraintRight_toLeftOf="@id/item_group_add"
+        android:id="@+id/item_group_cancel"
+        android:text="O`zgartirish"
+        android:textStyle="bold"
+        android:textColor="@color/blur"
+        android:textSize="14sp"
+        android:paddingRight="20dp"
+        android:paddingLeft="20dp"
+        android:paddingTop="10dp"
+        android:layout_marginTop="15dp"
+        android:paddingBottom="15dp"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"/>
+
+
+
+
+
+</androidx.constraintlayout.widget.ConstraintLayout>

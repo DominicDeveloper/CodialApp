@@ -1,0 +1,8 @@
+<resources>
+    <string name="app_name">CodialUz</string>
+    <!-- TODO: Remove or change this placeholder text -->
+    <string name="hello_blank_fragment">Hello blank fragment</string>
+    <string name="yopish">Yopish</string>
+    <string name="qo_shish">Qo`shish</string>
+    <string name="do_yo_want_delete_mentor">Ushbu mentorni o`chirmoqchimisiz?\nAgar mentorni o`chirsangiz uning guruhlarixam o`chib ketiadi!</string>
+</resources>

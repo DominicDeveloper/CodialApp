@@ -1,0 +1,56 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:layout_margin="10dp"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+
+    <EditText
+        android:padding="15dp"
+        android:layout_margin="15dp"
+        android:id="@+id/item_edt_add_coursename"
+        android:hint="Kurs nomi"
+        android:background="@color/lightblack"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintRight_toRightOf="parent"
+        app:layout_constraintLeft_toLeftOf="parent"/>
+    <EditText
+        android:padding="15dp"
+        android:layout_margin="15dp"
+        android:background="@color/lightblack"
+        android:id="@+id/item_edt_add_courseabout"
+        android:hint="Kurs haqida"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        app:layout_constraintTop_toBottomOf="@id/item_edt_add_coursename"
+        app:layout_constraintRight_toRightOf="@id/item_edt_add_coursename"
+        app:layout_constraintLeft_toLeftOf="@id/item_edt_add_coursename"/>
+    <TextView
+        app:layout_constraintTop_toBottomOf="@id/item_edt_add_courseabout"
+        app:layout_constraintRight_toLeftOf="@id/item_edt_add"
+        android:textStyle="bold"
+        android:textColor="@color/black"
+        android:textSize="18sp"
+        android:paddingTop="20dp"
+        android:paddingEnd="40dp"
+        android:paddingBottom="20dp"
+        android:text="@string/yopish"
+        android:id="@+id/item_edt_close"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"/>
+    <TextView
+        android:id="@+id/item_edt_add"
+        android:text="@string/qo_shish"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textSize="18sp"
+        android:textColor="@color/light_yellow"
+        android:textStyle="bold"
+       android:paddingTop="20dp"
+        android:paddingBottom="20dp"
+        app:layout_constraintRight_toRightOf="@id/item_edt_add_courseabout"
+        app:layout_constraintTop_toBottomOf="@id/item_edt_add_courseabout"/>
+
+</androidx.constraintlayout.widget.ConstraintLayout>
